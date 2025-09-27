@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="icon" type="image/x-icon" href="asset/icon/formularios-de-google.png">
-</head>
-<body>
-    <h1>Formulario</h1>
-</body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="asset/icon/formularios-de-google.png"
+    />
+    <link rel="stylesheet" href="html/css/style.css" />
+  </head>
+  <body class="cuerpo">
+    <header></header>
+    <main class="contenido">
+      <form
+        action="mailto:joseguillen1983@gmail.com"
+        method="post"
+        enctype="text/plain"
+        class="formu"
+      >
+        <h1>Contact</h1>
+        <input
+          type="text"
+          id="nombre"
+          name="name"
+          class="inpu"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="text"
+          id="apellido"
+          name="lastname"
+          class="inpu"
+          placeholder="Apellido"
+          required
+        />
+        <input
+          type="tel"
+          id="telefono"
+          name="phone"
+          class="inpu"
+          placeholder="Telefono"
+          required
+        />
+        <input
+          type="text"
+          id="direccion"
+          name="address"
+          class="inpu"
+          placeholder="Direccion"
+          required
+        />
+        <input
+          type="email"
+          id="correo"
+          name="email"
+          class="inpu"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          name="message"
+          id="mensaje"
+          class="inpu"
+          placeholder="Mensaje"
+          required
+        ></textarea>
+        <input type="submit" value="Enviar" class="buton" />
+      </form>
+    </main>
+  </body>
 </html>
